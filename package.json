@@ -1,0 +1,17 @@
+{
+  "name": "learn-web-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/leee-dw/learn-web-components.git",
+  "author": "leee-dw <dylan.dw.lee@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=development webpack server --open",
+    "build": "NODE_ENV=production webpack --mode production"
+  },
+  "devDependencies": {
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  }
+}

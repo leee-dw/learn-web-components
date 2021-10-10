@@ -4,48 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn Web Components</title>
+    <title>learn web component</title>
   </head>
   <body>
-    <custom-header></custom-header>
-
-    <script>
-      class CustomHeader extends HTMLElement {
-        constructor() {
-          super();
-        }
-
-        connectedCallback() {
-          this.render();
-        }
-
-        render() {
-          let logo = document.createElement("h1");
-          let wrapper = document.createElement("div");
-          wrapper.setAttribute("class", "wrapper");
-          logo.innerHTML = `WEB COMPONENTS`;
-          var style = document.createElement("style");
-
-          style.textContent = `
-          .wrapper {
-            background-color: #faa;
-            width: 100%;
-          }
-            `;
-
-          this.appendChild(wrapper);
-          wrapper.appendChild(style);
-          wrapper.appendChild(logo);
-        }
-
-        static get observedAttributes() {
-          return ["name"];
-        }
-
-        attributeChangedCallback() {}
-      }
-
-      customElements.define("custom-header", CustomHeader);
-    </script>
+    <h1>WEB COMPONENTS</h1>
+    <div id="root">hello</div>
   </body>
 </html>

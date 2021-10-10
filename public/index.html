@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>learn web component</title>
+    <style>
+      div {
+        border: 2px solid orange;
+      }
+    </style>
+    <title>Learn Web Component</title>
   </head>
   <body>
-    <h1>WEB COMPONENTS</h1>
-    <div id="root">hello</div>
+    <h1>Web Components</h1>
+    <template id="tooltip-template"></template>
+    <custom-tooltip text="웹 컴포넌트 툴팁입니다"></custom-tooltip>
+
+    <div>web Component styles not applied</div>
+    <a is="custom-confirm-link" href="https://google.com">Google</a>
   </body>
 </html>

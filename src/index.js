@@ -1,3 +1,3 @@
-console.log("??");
+export { ConfirmLink } from "./components/confirm-link";
 
-console.log(document.getElementById("root"));
+export { Tooltip } from "@/components/tooltip";
